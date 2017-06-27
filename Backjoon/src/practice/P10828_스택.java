@@ -16,38 +16,31 @@ public class P10828_스택 {
 		stack[index++] = x;
 	}
 
-	public int pop() {
+	public void pop() {
 		if (index <= 0) {
 			System.out.println("-1");
-			return -1;
 		} else {
 			System.out.println(stack[--index]);
-			return stack[index];
 		}
 	}
 
-	public int size() {
+	public void size() {
 		System.out.println(index);
-		return index;
 	}
 
-	public int empty() {
+	public void empty() {
 		if (index == 0) {
 			System.out.println("1");
-			return 1;
 		} else {
 			System.out.println("0");
-			return 0;
 		}
 	}
 
-	public int top() {
+	public void top() {
 		if (index == 0) {
 			System.out.println("-1");
-			return -1;
 		} else {
 			System.out.println(stack[index - 1]);
-			return stack[index - 1];
 		}
 	}
 
